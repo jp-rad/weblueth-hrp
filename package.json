@@ -1,13 +1,13 @@
 {
-  "name": "@weblueth/custom",
-  "version": "0.0.0-alpha.1",
-  "description": "@weblueth, custom template.",
+  "name": "@weblueth/hrs",
+  "version": "0.0.4",
+  "description": "Web Bluetooth react Heart Rate Service.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jp-rad/weblueth-custom.git"
+    "url": "git+https://github.com/jp-rad/weblueth-hrs.git"
   },
   "targets": {
     "pages": {
@@ -31,17 +31,22 @@
   "keywords": [
     "react",
     "typescript",
-    "web bluetooth"
+    "web bluetooth",
+    "heart rate profile"
   ],
   "author": "jp-rad",
   "license": "MIT",
   "devDependencies": {
+    "@types/events": "^3.0.0",
     "@types/react": "^18.0.28",
+    "@types/web-bluetooth": "^0.0.16",
     "process": "^0.11.10",
     "tslib": "^2.5.0",
     "typescript": "^5.0.2"
   },
   "dependencies": {
+    "@weblueth/gattbuilder": "^0.0.4",
+    "@weblueth/react": "^0.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
