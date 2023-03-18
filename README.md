@@ -1,17 +1,17 @@
-# @weblueth/custom
+# @weblueth/hrs
 
-@weblueth, custom template.
+Web Bluetooth react Heart Rate Service.
 
-[Live Demo (GitHub Pages)](https://jp-rad.github.io/weblueth-custom/)
+[Live Demo (GitHub Pages)](https://jp-rad.github.io/weblueth-hrs/)
 
 ## Installation:
 
 ```bash
-npm install @weblueth/custom --save-dev
+npm install @weblueth/hrs @types/web-bluetooth --save-dev
 ```
 
 or
 
 ```bash
-yarn add --dev @weblueth/custom
+yarn add --dev @weblueth/hrs @types/web-bluetooth
 ```
