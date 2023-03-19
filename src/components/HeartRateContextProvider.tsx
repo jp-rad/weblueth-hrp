@@ -1,7 +1,7 @@
 import React from 'react';
 import { createServiceBuilder } from '@weblueth/gattbuilder';
 import { WbxContextProvider } from '@weblueth/react';
-import { HeartRateService } from '../services/heartrate'
+import { HeartRateService } from '../services/HeartRateService'
 
 const requestHeartRateSensor = async (bluetooth: Bluetooth): Promise<BluetoothDevice | undefined> => {
     return await bluetooth.requestDevice({
