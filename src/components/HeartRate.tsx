@@ -2,7 +2,7 @@ import React from 'react';
 import { WbBoundCallback } from '@weblueth/statemachine';
 import { WbxCustomEventCallback, WbxServiceProps, WbxServices } from '@weblueth/react';
 import { Services } from './HeartRateContextProvider';
-import { HeartRateMeasurement, HeartRateService } from '../services/heartrate';
+import { HeartRateMeasurement, HeartRateService } from '../services/HeartRateService';
 
 interface Props extends WbxServiceProps<HeartRateService> {
     onHeartRateMeasurementChanged?: WbxCustomEventCallback<HeartRateMeasurement>;
