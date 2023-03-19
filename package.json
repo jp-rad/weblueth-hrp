@@ -1,13 +1,13 @@
 {
-  "name": "@weblueth/hrs",
-  "version": "0.0.4",
-  "description": "Web Bluetooth react Heart Rate Service.",
+  "name": "@weblueth/hrp",
+  "version": "0.0.5",
+  "description": "Web Bluetooth react, Heart Rate Profile.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jp-rad/weblueth-hrs.git"
+    "url": "git+https://github.com/jp-rad/weblueth-hrp.git"
   },
   "targets": {
     "pages": {
