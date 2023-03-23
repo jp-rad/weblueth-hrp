@@ -1,18 +1,19 @@
 import React from 'react';
-import { createServiceBuilder } from '@weblueth/gattbuilder';
+import { createServiceBuilder, DeviceInformationService } from '@weblueth/gattbuilder';
 import { WbxContextProvider } from '@weblueth/react';
 import { HeartRateService } from '../services/HeartRateService'
 
 const requestHeartRateSensor = async (bluetooth: Bluetooth): Promise<BluetoothDevice | undefined> => {
     return await bluetooth.requestDevice({
         filters: [{ services: ['heart_rate'] }],
-        optionalServices: ['battery_service']
+        optionalServices: ['battery_service', 'device_information']
     });
 };
 
 export type Services = {
     heartRateService?: HeartRateService;
     battery_service?: BluetoothRemoteGATTService;
+    deviceInformationService?: DeviceInformationService
 }
 
 const retrieveServices = async (device: BluetoothDevice): Promise<Services> => {
@@ -27,7 +28,8 @@ const retrieveServices = async (device: BluetoothDevice): Promise<Services> => {
     const builder = createServiceBuilder(services);
     const heartRateService = await builder.createService(HeartRateService);
     const battery_service = await device.gatt.getPrimaryService('battery_service');
-    return { heartRateService, battery_service };
+    const deviceInformationService = await builder.createService(DeviceInformationService);
+    return { heartRateService, battery_service, deviceInformationService };
 };
 
 type Props = {

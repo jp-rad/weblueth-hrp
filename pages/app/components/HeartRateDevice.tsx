@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import { WbBoundCallback } from '@weblueth/statemachine';
+import { DeviceInformation } from '@weblueth/gattbuilder';
 import { useWbxActor, WbxCustomEventCallback, WbxDevice, WbxServices } from '@weblueth/react';
 import { HeartRate, HeartRateMeasurement, HeartRateService, Services } from '../../../src';
 
@@ -59,14 +60,20 @@ export default function HeartRateDevice() {
      */
     const [batteryService, setBatteryService] = useState<BluetoothRemoteGATTService | undefined>(undefined);
     const [battery, setBattery] = useState<number | undefined>(undefined);
+    const [deviceInfo, setDeviceInfo] = useState<DeviceInformation | undefined>();
 
     const onServicesBound: WbBoundCallback<Services> = async bound => {
         // battery_service
         if (bound.binding) {
+            console.log(bound.target);
             setBatteryService(bound.target.battery_service);
+            const info = await bound.target.deviceInformationService?.readDeviceInformation();
+            console.log(info);
+            setDeviceInfo(info)
         } else {
             setBatteryService(undefined);
             setBattery(undefined);
+            setDeviceInfo(undefined);
         }
     };
 
@@ -113,7 +120,7 @@ export default function HeartRateDevice() {
             <button onClick={connect}>CONNECT</button>
             <button onClick={disconnect}>DISCONNECT</button>
             <br />
-            Name: {name}
+            Name: {name} {deviceInfo?.firmwareRevision}
             <br />
             Loaction: {location}
             <br />
