@@ -5,11 +5,11 @@ import { TypedDispatcher, EventDispatcher, ServiceHelper } from "@weblueth/gattb
  */
 export enum HeartRateCharacteristic {
     // Heart Rate Measurement,  Client Characteristic Configuration Descriptor
-    HeartRateMeasurement = "00002a37-0000-1000-8000-00805f9b34fb", // "heart_rate_measurement",
+    HeartRateMeasurement = "heart_rate_measurement", // "00002a37-0000-1000-8000-00805f9b34fb",
     // Body Sensor Location
-    BodySensorLocation = "00002a38-0000-1000-8000-00805f9b34fb", // "body_sensor_location",
+    BodySensorLocation = "body_sensor_location", // "00002a38-0000-1000-8000-00805f9b34fb",
     // Heart Rate Control Point
-    HeartRateControlPoint = "00002a39-0000-1000-8000-00805f9b34fb" // "heart_rate_control_point"
+    HeartRateControlPoint = "heart_rate_control_point" // "00002a39-0000-1000-8000-00805f9b34fb"
 }
 
 /**
@@ -38,7 +38,7 @@ export class HeartRateService extends (EventDispatcher as new () => TypedDispatc
     /**
      * @hidden
      */
-    public static uuid = "0000180d-0000-1000-8000-00805f9b34fb"; // "heart_rate";
+    public static uuid = "heart_rate"; // "0000180d-0000-1000-8000-00805f9b34fb";
 
     /**
      * @hidden
