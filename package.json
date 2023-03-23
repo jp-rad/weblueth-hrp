@@ -45,7 +45,7 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "@weblueth/gattbuilder": "^0.0.4",
+    "@weblueth/gattbuilder": "^0.0.5",
     "@weblueth/react": "^0.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

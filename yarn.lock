@@ -22,19 +22,19 @@
     csstype "^3.0.2"
 
 "@types/scheduler@*":
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
-  integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
+  version "0.16.3"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.3.tgz#cef09e3ec9af1d63d2a6cc5b383a737e24e6dcf5"
+  integrity sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==
 
 "@types/web-bluetooth@^0.0.16":
   version "0.0.16"
   resolved "https://registry.yarnpkg.com/@types/web-bluetooth/-/web-bluetooth-0.0.16.tgz#1d12873a8e49567371f2a75fe3e7f7edca6662d8"
   integrity sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==
 
-"@weblueth/gattbuilder@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@weblueth/gattbuilder/-/gattbuilder-0.0.4.tgz#b86c2cd6fec21b8f261dd1b0cde27723eecf9423"
-  integrity sha512-S4m/equY4qFDRySOnUJltu7gCqsmyx4l4ykmR5HjBK3uvHbQmlwLGXXVGoDlOkUeEdo90PlQZeK7sJ/Ka8FhaQ==
+"@weblueth/gattbuilder@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@weblueth/gattbuilder/-/gattbuilder-0.0.5.tgz#aec0cb76afecff27be3e4d82804b53d68d5012ca"
+  integrity sha512-aRvrn3zlTv+zoyxL3apqQhp1Tbk4vkBOZ5SoEgKUp3/MMSqrcUtI4Ofp0A1MYWitACgesymuiBpo6LCxuVPskA==
   dependencies:
     events "^3.3.0"
 
@@ -133,6 +133,6 @@ use-sync-external-store@^1.0.0:
   integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
 
 xstate@^4.37.0:
-  version "4.37.0"
-  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.37.0.tgz#2f253ccbfc2dc6954ff975b8102714bde9751726"
-  integrity sha512-YC+JCerRclKS9ixQTuw8l3vs3iFqWzNzOGR0ID5XsSlieMXIV9nNPE43h9CGr7VdxA1QYhMwhCZA0EdpOd17Bg==
+  version "4.37.1"
+  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.37.1.tgz#1dd5a8bda179ef6cbb42e0e5fe06c99048a1ce3c"
+  integrity sha512-MuB7s01nV5vG2CzaBg2msXLGz7JuS+x/NBkQuZAwgEYCnWA8iQMiRz2VGxD3pcFjZAOih3fOgDD3kDaFInEx+g==
